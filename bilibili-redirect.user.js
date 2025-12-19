@@ -13,13 +13,11 @@
 // ==/UserScript==
 
 (function() {
-    'use strict';
-    // 目标重定向地址
-    const targetUrl = 'https://search.bilibili.com';
-    // 检查当前是否在首页（避免无限重定向）
-    if (window.location.hostname === 'www.bilibili.com' && 
-        (window.location.pathname === '/' || window.location.pathname === '')) {
-        window.location.replace(targetUrl);
-    }
+  'use strict';
+  // 目标重定向地址
+  const targetUrl = 'https://search.bilibili.com';
+  // 检查当前是否在首页（避免无限重定向）
+  if (window.location.hostname === 'www.bilibili.com' && (window.location.pathname === '/' || window.location.pathname === '')) {
+    window.location.replace(targetUrl);
+  }
 })();
-
